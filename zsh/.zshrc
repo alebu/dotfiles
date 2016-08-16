@@ -93,4 +93,4 @@ export VISUAL=$EDITOR
 source .zsh/alias.zsh
 
 # History saving
-export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~.zhistory
+export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
