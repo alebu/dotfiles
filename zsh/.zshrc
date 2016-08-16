@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/alebu/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -93,4 +93,4 @@ export VISUAL=$EDITOR
 source .zsh/alias.zsh
 
 # History saving
-export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zsh/.zhistory
+export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~.zhistory
