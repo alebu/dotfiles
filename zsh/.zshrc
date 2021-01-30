@@ -90,9 +90,8 @@ export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
 # ooh, what is this? Aliases?
-source .zsh/alias.zsh
+source ~/.zsh/alias.zsh
 
 # History saving
 export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
-export PATH=$PATH:/usr/local/go/bin                                                                                                                                                                          
-export GOPATH=/home/alebu/dev/go                
+
