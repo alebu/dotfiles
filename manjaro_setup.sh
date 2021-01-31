@@ -8,7 +8,8 @@ sudo pacman -S --needed vim
 rm ~/.vimrc
 ln -s ~/projects/dotfiles/vim/.vimrc ~/.vimrc
 
-# sudo amac build nordvpn-bin
+# NordVPN
+sudo amac build nordvpn-bin
 sudo systemctl enable --now nordvpnd
 
 # Oh-my-zsh
