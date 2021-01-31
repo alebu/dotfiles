@@ -9,7 +9,7 @@ rm ~/.vimrc
 ln -s ~/projects/dotfiles/vim/.vimrc ~/.vimrc
 
 # sudo amac build nordvpn-bin
-# sudo systemctl enable --now nordvpnd
+sudo systemctl enable --now nordvpnd
 
 # Oh-my-zsh
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -27,7 +27,7 @@ ln -s ~/projects/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # R
 sudo pacman -S --needed r
-# pamac build rstudio-desktop-bin
+pamac build rstudio-desktop-bin
 
 # Python
 sudo pacman -S --needed pyenv
@@ -35,3 +35,12 @@ pip install -U pipenv
 
 # utilities
 sudo pacman -S --needed htop
+
+# LaTex
+sudo pacman -Sy --needed texlive-most texlive-bin
+
+# VSCode
+pamac build visual-studio-code-bin
+
+# Enable TRIM
+sudo systemctl enable fstrim.timer
