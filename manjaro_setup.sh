@@ -12,7 +12,7 @@ ln -s ~/projects/dotfiles/vim/.vimrc ~/.vimrc
 sudo systemctl enable --now nordvpnd
 
 # Oh-my-zsh
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo linking custom .zshrc file
 rm ~/.zshrc
 rm -r ~/.zsh
