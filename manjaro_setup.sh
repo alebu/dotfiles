@@ -1,7 +1,15 @@
 #!/bin/bash
 
+
+# Set mirrors and update
 sudo pacman-mirrors --country United_Kingdom
 sudo pacman -Syu
+
+# C
+sudo pacman -Sy glibc
+
+# Fortran
+sudo pacman -Sy gcc-fortran
 
 # Vim
 sudo pacman -S --needed vim
@@ -9,7 +17,7 @@ rm ~/.vimrc
 ln -s ~/projects/dotfiles/vim/.vimrc ~/.vimrc
 
 # NordVPN
-sudo amac build nordvpn-bin
+sudo pamac build nordvpn-bin
 sudo systemctl enable --now nordvpnd
 
 # Oh-my-zsh
@@ -36,6 +44,11 @@ pip install -U pipenv
 
 # utilities
 sudo pacman -S --needed htop
+sudo pacman -S --needed neofetch
+sudo pacman -Syu yay
+
+# V8
+yay -S v8-r
 
 # LaTex
 sudo pacman -Sy --needed texlive-most texlive-bin
