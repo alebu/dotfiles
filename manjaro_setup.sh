@@ -7,6 +7,7 @@ sudo pacman -Syu
 
 # C
 sudo pacman -Sy glibc
+sudo yay -S clang
 
 # Fortran
 sudo pacman -Sy gcc-fortran
@@ -36,6 +37,7 @@ ln -s ~/projects/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 # R
 sudo pacman -S --needed r
+sudo pacman -S tk
 pamac build rstudio-desktop-bin
 
 # Python
